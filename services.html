@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Services - Roland Multi-Services</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .service-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .service-row section {
+      flex: 1 1 45%;
+    }
+    .service-desc {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #ff6600;
+      margin-top: 10px;
+    }
+    .service-desc button {
+      margin-top: 10px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    .service-desc button:hover {
+      background-color: #e05500;
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Nos Services</h1></header>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main class="services">
+    <div class="service-row">
+      <section>
+        <h2>🎤 Maître de cérémonie</h2>
+        <img src="images/mc.jpg" alt="Maître de cérémonie">
+      </section>
+      <section class="service-desc">
+        <p>Animation professionnelle de cérémonies, mariages, conférences et événements d'entreprise. Une présence dynamique, élégante et maîtrisée. Nous garantissons ponctualité, prestance et respect des attentes du client pour un événement inoubliable.</p>
+        <button onclick="location.href='mc.html'">En savoir plus</button>
+      </section>
+
+      <section>
+        <h2>🛠️ Maintenance informatique</h2>
+        <img src="images/maintenance.jpg" alt="Maintenance informatique">
+      </section>
+      <section class="service-desc">
+        <p>Réparation, optimisation et mise à jour de vos ordinateurs et logiciels. Assistance rapide à domicile ou à distance. Nous assurons une intervention rapide, fiable et respectueuse de vos équipements, avec écoute attentive de vos besoins.</p>
+        <button onclick="location.href='maintenance.html'">En savoir plus</button>
+      </section>
+
+      <section>
+        <h2>📘 Soutien académique</h2>
+        <img src="images/academique.jpg" alt="Soutien académique">
+      </section>
+      <section class="service-desc">
+        <p>Accompagnement scolaire et universitaire : devoirs, exposés, mémoires. Nos services incluent relecture, mise en forme, aide à la rédaction. Toujours disponible, respectueux de votre niveau et à l’écoute de vos objectifs d’apprentissage.</p>
+        <button onclick="location.href='academique.html'">En savoir plus</button>
+      </section>
+
+      <section>
+        <h2>💻 Développement Web</h2>
+        <img src="images/web.jpg" alt="Développement Web">
+      </section>
+      <section class="service-desc">
+        <p>Création de sites vitrines modernes et responsives. Design soigné, adaptable à tous les écrans. Nous garantissons disponibilité, respect du style demandé et communication fluide tout au long du projet.</p>
+        <button onclick="location.href='web.html'">En savoir plus</button>
+      </section>
+
+      <section>
+        <h2>🔊 Sonorisation</h2>
+        <img src="images/sonorisation.jpg" alt="Sonorisation">
+      </section>
+      <section class="service-desc">
+        <p>Installation et gestion de matériel audio pour vos événements. Qualité sonore optimale, matériel professionnel, et présence ponctuelle sur place. Nous respectons vos préférences musicales et assurons une ambiance maîtrisée.</p>
+        <button onclick="location.href='sonorisation.html'">En savoir plus</button>
+      </section>
+    </div>
+  <section class="testimonials" style="padding: 40px; background-color: #f0f0f0;">
+  <h2 style="text-align: center; color: #ff6600;">Témoignages</h2>
+  <div style="max-width: 900px; margin: auto;">
+    <blockquote style="font-style: italic; border-left: 4px solid #ff6600; margin: 20px 0; padding-left: 15px;">
+      "Service très professionnel, ponctuel et à l’écoute. Je recommande vivement !" – Mariam, cliente fidèle
+    </blockquote>
+    <blockquote style="font-style: italic; border-left: 4px solid #ff6600; margin: 20px 0; padding-left: 15px;">
+      "Travail rapide et efficace pour mon site web. Communication excellente !" – Stéphane, entrepreneur
+    </blockquote>
+  </div>
+</section>
+
+<section class="quote-form" style="padding: 40px;">
+  <h2 style="text-align: center; color: #ff6600;">Demande de devis</h2>
+  <form style="max-width: 600px; margin: auto;" action="#" method="post">
+    <label>Nom :</label><br>
+    <input type="text" name="nom" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+    <label>Email :</label><br>
+    <input type="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+    <label>Service souhaité :</label><br>
+    <input type="text" name="service" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+    <label>Message :</label><br>
+    <textarea name="message" rows="5" style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea><br>
+
+    <button type="submit" style="background-color: #ff6600; color: white; padding: 10px 20px; border: none; font-weight: bold;">Envoyer</button>
+  </form>
+</section>
+</main>
+  <footer><p>&copy; 2025 Roland Multi-Services</p></footer>
+</body>
+</html>
