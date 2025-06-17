@@ -47,3 +47,52 @@ footer {
   border-radius: 60px;
   margin-top: 10px;
 }
+/* Responsive design pour écran < 768px */
+@media (max-width: 768px) {
+  .service-row {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .service-desc {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1em;
+  }
+
+  .quote-form h2,
+  .testimonials h2 {
+    font-size: 1.3em;
+  }
+}
+
